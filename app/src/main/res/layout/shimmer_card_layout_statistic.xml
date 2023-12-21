@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="6dp"
+    app:cardPreventCornerOverlap="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idTVTitleStatistic"
+            android:background="@color/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVColorOne"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/idTVTitleStatistic"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10.5dp"
+            android:background="@color/shimmer" />
+
+        <TextView
+            android:id="@+id/idTVOneGasStation"
+            android:background="@color/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTVTitleStatistic"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_toEndOf="@+id/idTVColorOne"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/idTVColorTwo"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/idTVOneGasStation"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/shimmer"/>
+
+        <TextView
+            android:id="@+id/idTVTwoGasStation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTVOneGasStation"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/idTVColorTwo"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@color/shimmer"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/idHBCGraph"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/idTVTwoGasStation"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/shimmer" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

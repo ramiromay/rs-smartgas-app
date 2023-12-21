@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.gas.GasFragment"
+    android:paddingTop="?attr/actionBarSize">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineAux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineAux">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/idETMagna"
+            style="@style/Theme.ButtonMaterial"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:text="@string/magna"
+            app:backgroundTint="@color/magna"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/magna"
+            tools:ignore="TextContrastCheck">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/idETPremium"
+            style="@style/Theme.ButtonMaterial"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+           android:layout_marginStart="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="@string/premium"
+            app:backgroundTint="@color/premium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36"
+            tools:ignore="TextContrastCheck">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.ButtonMaterial"
+            android:id="@+id/idETDiesel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:textSize="12sp"
+            android:text="@string/diesel"
+            app:backgroundTint="@color/diesel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/idSFPreviewGasStation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+            <include layout="@layout/shimmer_card_layout_gas_station" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVGas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ui.map.MapFragment">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main content -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFABAllGasStation"
+        style="@style/Widget.App.FloatingActionButtonAllGasStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/fab_content_desc"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/all_gas_station_48px" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        style="@style/Widget.App.FloatingActionButtonMyLocation"
+        android:id="@+id/idFABMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.FloatingActionButton"
+        android:contentDescription="@string/fab_content_desc"
+        app:layout_constraintBottom_toTopOf="@+id/idFABAllGasStation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/my_location_48px" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_background"
+        app:layout_anchorGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

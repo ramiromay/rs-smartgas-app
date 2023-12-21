@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SmartGas</string>
+    <string name="KEY_API">AIzaSyAjpcgrGZgEQnt-Ot8LQwI_tA7Ff5fCv9I</string>
+    <string name="title_statistics">Estadísticas</string>
+    <string name="title_map">Mapa</string>
+    <string name="title_gas">Gas</string>
+
+    <!-- TODO: String for card view for gas station -->
+    <string name="gas_name">Name Gas</string>
+    <string name="direction">Direction</string>
+    <string name="Cost">Cost</string>
+
+    <!-- TODO: String for card view for statistic -->
+    <string name="category">Magna</string>
+    <string name="one_gas_station">ONE GAS STATION</string>
+    <string name="two_gas_station">TWO GAS STATION</string>
+
+    <string name="magna">Magna</string>
+    <string name="premium">Premium</string>
+    <string name="diesel">Diesel</string>
+    <string name="icon_app">icon app</string>
+    
+    <string name="fab_content_desc">FAB de location</string>
+</resources>

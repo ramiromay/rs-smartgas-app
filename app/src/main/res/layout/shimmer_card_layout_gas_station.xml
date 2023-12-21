@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true">
+
+    <!--
+        //app:cardUseCompatPadding="true"
+        In the above cardview widget
+        cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view
+        card background color will give background color to your card view
+        card max elevation will give the cardview maximum elevation
+        card prevent corner overlap will add padding to CardView on v20 and
+        before to prevent intersections between the Card content and rounded corners.
+        card use compact padding will add padding in API v21+ as well to have the same
+        measurements with previous versions.
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idIVGasImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/shimmer"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/idTVGasName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:layout_toEndOf="@id/idIVGasImage"
+            android:background="@color/shimmer"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVGasDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTVGasName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/idIVGasImage"
+            android:background="@color/shimmer"
+            android:drawablePadding="2dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/idTVGasCost"
+            android:background="@color/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/idTVGasName"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/digital_bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civLogoOxxo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/idTVGasDirection"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/idIVGasImage"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civLogo7Eleven"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/idTVGasDirection"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/civLogoOxxo"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civLogoGoMart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/idTVGasDirection"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/civLogo7Eleven"
+            android:background="@color/cardview_shadow_start_color" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

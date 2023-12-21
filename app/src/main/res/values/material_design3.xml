@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MATERIAL ALERT DIALOG-->
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text.CenterStacked">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- BUTTON-->
+    <style name="Theme.ButtonMaterial" parent="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="icon">@drawable/ic_arrows_up_down_24</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent.Button</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconSize">20dp</item>
+
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent.Button" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+    </style>
+
+    <!-- ALERT DIALOG PERSONALIZED-->
+    <style name="Theme.AppCompat.Dialog.Alert.MyDialog" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        ...
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <!-- NAVIGATION BAR-->
+
+    <!-- Style for Material 3 Bottom Navigation View. -->
+    <style name="Widget.Material3.BottomNavigationView" parent="Widget.Material3.NavigationView">
+        <item name="android:background">@color/nav_bar</item>
+        <item name="backgroundTint">@null</item>
+        <item name="elevation">@dimen/m3_sys_elevation_level5</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.Material3.BottomNavigationView.ActiveIndicator</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceTitleSmall</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceTitleSmall</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="itemIconTint">@drawable/color_item_navbar</item>
+        <item name="itemTextColor">@drawable/color_item_navbar</item>
+        <item name="itemPaddingTop">@dimen/m3_bottom_nav_item_padding_top</item>
+        <item name="itemPaddingBottom">@dimen/m3_bottom_nav_item_padding_bottom</item>
+        <item name="android:minHeight">@dimen/m3_bottom_nav_min_height</item>
+    </style>
+
+    <style name="Widget.Material3.BottomNavigationView.itemTextAppearance" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">?attr/textAppearanceTitleSmall</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Widget.Material3.BottomNavigationView.ActiveIndicator" parent="">
+        <item name="android:width">@dimen/m3_bottom_nav_item_active_indicator_width</item>
+        <item name="android:height">@dimen/m3_bottom_nav_item_active_indicator_height</item>
+        <item name="marginHorizontal">@dimen/m3_bottom_nav_item_active_indicator_margin_horizontal</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Full</item>
+        <item name="android:color">@color/container_rounded_focusable_icon_navbar</item>
+    </style>
+
+    <!-- DIALOG-->
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeSlide">
+        <item name="android:windowEnterAnimation">@anim/down_top</item>
+        <item name="android:windowExitAnimation">@anim/top_down</item>
+    </style>
+
+
+    <!-- FAB ALL GAS STATIONS-->
+    <style name="Widget.App.FloatingActionButtonAllGasStation" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButtonAllGasStation</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButtonAllGasStation" parent="">
+        <item name="colorContainer">@color/fab_all_gas_station</item>
+        <item name="colorOnContainer">@color/white</item>
+    </style>
+
+    <!-- FAB my location-->
+    <style name="Widget.App.FloatingActionButtonMyLocation" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorContainer">@color/white</item>
+        <item name="colorOnContainer">@color/fab_all_gas_station</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.FloatingActionButton" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+    </style>
+    
+    <!--    Bottom sheet-->
+    <style name="Widget.BottomSheet" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>
