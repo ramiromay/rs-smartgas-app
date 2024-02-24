@@ -7,7 +7,7 @@ cuanto a precio y disposición.
 
 ## Tecnologías Utilizadas
 * [Java 8](https://www.oracle.com/mx/java/technologies/javase/javase8-archive-downloads.html)
-* [Firebase](hhttps://firebase.google.com/?gad_source=1&gclid=Cj0KCQiAxOauBhCaARIsAEbUSQT-nayFF86gbY4FQRxTlvbQktZSuA06qw5NkDw0No8XhpV2NZlAxWoaAuqSEALw_wcB&gclsrc=aw.ds&hl=es-419)
+* [Firebase](https://firebase.google.com/?gad_source=1&gclid=Cj0KCQiAxOauBhCaARIsAEbUSQT-nayFF86gbY4FQRxTlvbQktZSuA06qw5NkDw0No8XhpV2NZlAxWoaAuqSEALw_wcB&gclsrc=aw.ds&hl=es-419)
 * [Google Maps API](https://developers.google.com/maps/apis-by-platform?hl=es-419)
 
 ## Funciones de los módulos del sistema
