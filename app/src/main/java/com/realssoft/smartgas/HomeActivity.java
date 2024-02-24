@@ -53,6 +53,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     protected static final int REQUEST_CHECK_SETTINGS = 0x1;
+
     private FloatingActionButton fbaMyLocation;
     private Activity activity = this;
 
